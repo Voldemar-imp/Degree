@@ -27,6 +27,7 @@ namespace Loops
                 Console.WriteLine("число {0} в степени {1}, равнo: {2}", number2, degree, total);
                 Console.ReadKey();
             }
+            
             Console.WriteLine(total + " > " + number1);
             Console.WriteLine("минимальная степень числа {0}, превосходящая число {1}, " +
                 "равна: {2}", number2, number1, degree);
