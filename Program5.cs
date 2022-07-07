@@ -25,7 +25,6 @@ namespace Loops
                 degree++;
                 total *= number2;
                 Console.WriteLine("число {0} в степени {1}, равнo: {2}", number2, degree, total);
-                Console.ReadKey();
             }
             
             Console.WriteLine(total + " > " + number1);
