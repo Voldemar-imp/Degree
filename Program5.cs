@@ -11,25 +11,25 @@ namespace Loops
         static void Main(string[] args)
         {
             Random random = new Random();
-            int minNumber1 = 1;
-            int maxNumber1 = 100;
-            int number1 = random.Next(minNumber1, (maxNumber1 + 1));
-            int number2 = 2;
-            int total = number2;
+            int minRandomNumber = 1;
+            int maxRandomNumber = 100;
+            int randomNumber = random.Next(minRandomNumber, (maxRandomNumber + 1));
+            int basisOfDegree = 2;
+            int totalCalculation = basisOfDegree;
             int degree = 1;
 
-            Console.WriteLine("Выпало число: " + number1);
+            Console.WriteLine("Выпало число: " + randomNumber);
 
-            while (total < number1)
+            while (totalCalculation <= randomNumber)
             {
                 degree++;
-                total *= number2;
-                Console.WriteLine("число {0} в степени {1}, равнo: {2}", number2, degree, total);
+                totalCalculation *= basisOfDegree;
+                Console.WriteLine("число {0} в степени {1}, равнo: {2}", basisOfDegree, degree, totalCalculation);
             }
-            
-            Console.WriteLine(total + " > " + number1);
+
+            Console.WriteLine(totalCalculation + " > " + randomNumber);
             Console.WriteLine("минимальная степень числа {0}, превосходящая число {1}, " +
-                "равна: {2}", number2, number1, degree);
+                "равна: {2}", basisOfDegree, randomNumber, degree);
         }
     }
 }
